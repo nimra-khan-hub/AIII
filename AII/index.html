@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPost AI - AI-Powered Facebook Automation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">AutoPost AI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#feature-showcase">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing-section">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#auth-section">Login</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary" href="#auth-section">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Post Smarter, Not Harder – AI-Powered Facebook Automation</h1>
+                    <p class="hero-subtitle">Schedule undetectable posts to Groups & Pages with human-like precision</p>
+                    <button class="btn btn-gradient">Start Free Trial</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dashboard-preview">
+                        <!-- Placeholder for animated dashboard -->
+                        <div class="glass-card">
+                            <div class="dashboard-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="particles"></div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Sidebar -->
+                <div class="col-lg-3">
+                    <div class="glass-card sidebar">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    <i class="fas fa-paper-plane"></i> Posts
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-chart-line"></i> Analytics
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-users"></i> Accounts
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-cog"></i> Settings
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-6">
+                    <div class="glass-card calendar-card">
+                        <h3>Post Scheduler</h3>
+                        <div class="calendar-placeholder">
+                            <!-- Calendar will be implemented with JavaScript -->
+                            <div class="calendar-grid">
+                                <!-- Placeholder for calendar days -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Panel -->
+                <div class="col-lg-3">
+                    <div class="glass-card stats-card">
+                        <h4>Quick Stats</h4>
+                        <div class="stat-item">
+                            <span class="stat-label">Scheduled Posts</span>
+                            <span class="stat-value">24</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Engagement Rate</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Ban Risk</span>
+                            <div class="risk-meter">
+                                <div class="risk-level low"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing-section" class="pricing-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Choose Your Plan</h2>
+            
+            <!-- Billing Toggle -->
+            <div class="billing-toggle text-center mb-4">
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="billing" id="monthly" checked>
+                    <label class="btn btn-outline-primary" for="monthly">Monthly</label>
+                    
+                    <input type="radio" class="btn-check" name="billing" id="annual">
+                    <label class="btn btn-outline-primary" for="annual">Annual</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Free Plan -->
+                <div class="col-lg-4">
+                    <div class="glass-card pricing-card">
+                        <div class="pricing-header">
+                            <h3>Free</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">0</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> 5 Posts per day</li>
+                            <li><i class="fas fa-check"></i> Basic analytics</li>
+                            <li><i class="fas fa-check"></i> 1 Facebook account</li>
+                            <li class="disabled"><i class="fas fa-times"></i> AI post generation</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Priority support</li>
+                        </ul>
+                        <button class="btn btn-gradient w-100">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="col-lg-4">
+                    <div class="glass-card pricing-card featured">
+                        <div class="best-value">Best Value</div>
+                        <div class="pricing-header">
+                            <h3>Pro</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">29</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Unlimited posts</li>
+                            <li><i class="fas fa-check"></i> Advanced analytics</li>
+                            <li><i class="fas fa-check"></i> 5 Facebook accounts</li>
+                            <li><i class="fas fa-check"></i> AI post generation</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                        </ul>
+                        <button class="btn btn-gradient w-100">Start Free Trial</button>
+                    </div>
+                </div>
+
+                <!-- Agency Plan -->
+                <div class="col-lg-4">
+                    <div class="glass-card pricing-card">
+                        <div class="pricing-header">
+                            <h3>Agency</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Unlimited everything</li>
+                            <li><i class="fas fa-check"></i> White-label reports</li>
+                            <li><i class="fas fa-check"></i> Unlimited accounts</li>
+                            <li><i class="fas fa-check"></i> Custom AI training</li>
+                            <li><i class="fas fa-check"></i> 24/7 support</li>
+                        </ul>
+                        <button class="btn btn-gradient w-100">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Showcase Section -->
+    <section id="feature-showcase" class="feature-showcase py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Powerful Features</h2>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="feature-content">
+                        <div class="feature-item active">
+                            <h3>AI Post Generator</h3>
+                            <p>Transform basic posts into engaging, viral-worthy content with our advanced AI technology.</p>
+                            <div class="feature-demo">
+                                <div class="text-morph">
+                                    <span class="text-basic">Basic Post</span>
+                                    <span class="text-enhanced">AI-Enhanced Viral Caption</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <h3>Stealth Mode</h3>
+                            <p>Keep your automation undetectable with our advanced human-like posting patterns.</p>
+                            <div class="feature-demo">
+                                <div class="stealth-toggle">
+                                    <span class="mode bot">Bot-Like</span>
+                                    <div class="toggle-switch"></div>
+                                    <span class="mode human">Human Mode</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <h3>Smart Analytics</h3>
+                            <p>Track your post performance and engagement metrics in real-time.</p>
+                            <div class="feature-demo">
+                                <div class="analytics-graph">
+                                    <div class="graph-bar" style="height: 60%"></div>
+                                    <div class="graph-bar" style="height: 80%"></div>
+                                    <div class="graph-bar" style="height: 40%"></div>
+                                    <div class="graph-bar" style="height: 90%"></div>
+                                    <div class="graph-bar" style="height: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="feature-illustration">
+                        <div class="floating-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                        </div>
+                        <div class="illustration-container">
+                            <!-- Placeholder for 3D illustration -->
+                            <div class="illustration-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Signup Section -->
+    <section id="auth-section" class="auth-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="glass-card auth-card">
+                        <div class="auth-header text-center mb-4">
+                            <h2>Welcome Back</h2>
+                            <p class="text-secondary">Sign in to continue to AutoPost AI</p>
+                        </div>
+
+                        <!-- Social Auth Buttons -->
+                        <div class="social-auth mb-4">
+                            <button class="btn btn-social btn-google">
+                                <i class="fab fa-google"></i>
+                                Continue with Google
+                            </button>
+                            <button class="btn btn-social btn-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                Continue with Facebook
+                            </button>
+                        </div>
+
+                        <div class="divider">
+                            <span>or</span>
+                        </div>
+
+                        <!-- Login Form -->
+                        <form class="auth-form">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                <label for="email">Email address</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <label for="password">Password</label>
+                            </div>
+
+                            <div class="password-strength mb-3">
+                                <div class="strength-meter">
+                                    <div class="strength-bar"></div>
+                                </div>
+                                <small class="strength-text">Password strength: <span>Weak</span></small>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="remember">
+                                    <label class="form-check-label" for="remember">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <a href="#" class="forgot-password">Forgot password?</a>
+                            </div>
+
+                            <button type="submit" class="btn btn-gradient w-100">Sign In</button>
+                        </form>
+
+                        <div class="auth-footer text-center mt-4">
+                            <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav d-lg-none">
+        <a href="#" class="bottom-nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-plus-circle"></i>
+            <span>New Post</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Analytics</span>
+        </a>
+    </nav>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 
